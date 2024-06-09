@@ -8,8 +8,8 @@ document.getElementById('email-form').addEventListener('submit', function(event)
   submitButton.classList.add('loading');
   submitButton.textContent = 'Sending...';
 
-  const botToken = '7413652980:AAHiwgCfzvzfzGYzOHep0UUoOrGcyxIOv2I';
-  const chatId = '6426297503';
+  const botToken = 'YOUR_BOT_TOKEN';
+  const chatId = 'YOUR_CHAT_ID';
   const text = `New early access request from: ${emailInput.value}`;
 
   fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -40,4 +40,12 @@ document.getElementById('email-form').addEventListener('submit', function(event)
     submitButton.textContent = 'Request early access';
     alert('Error sending email. Please try again.');
   });
+});
+
+document.getElementById('email').addEventListener('focus', function() {
+  document.body.style.height = 'calc(100% - 216px)';  // Adjust height when keyboard is open
+});
+
+document.getElementById('email').addEventListener('blur', function() {
+  document.body.style.height = '100%';  // Restore height when keyboard is closed
 });
