@@ -1,0 +1,118 @@
+.iwy-wallet .depth-3-frame-01 {
+  background: url('../assets/images/depth_3_frame_0.png') 50% / cover no-repeat, linear-gradient(#122112, #122112);
+  width: 390px;
+  height: 320px;
+}
+.iwy-wallet .depth-1-frame-0 {
+  margin-bottom: 20px;
+  display: flex;
+  width: 390px;
+  height: 320px;
+  box-sizing: border-box;
+}
+.iwy-wallet .welcome-to-iwy-wallet {
+  overflow-wrap: break-word;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.25;
+  color: #FFFFFF;
+}
+.iwy-wallet .depth-1-frame-1 {
+  margin-bottom: 16px;
+  display: flex;
+  box-sizing: border-box;
+}
+.iwy-wallet .the-web-3-crypto-wallet-with-free-fee-conception {
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+.iwy-wallet .depth-1-frame-2 {
+  margin-bottom: 213px;
+  display: flex;
+  box-sizing: border-box;
+}
+.iwy-wallet .email {
+  overflow-wrap: break-word;
+  font-family: 'Space Grotesk';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+.iwy-wallet .depth-3-frame-0 {
+  margin-bottom: 8px;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
+}
+.iwy-wallet .enter-your-email {
+  overflow-wrap: break-word;
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #94C794;
+}
+.iwy-wallet .depth-3-frame-1 {
+  border-radius: 12px;
+  background: #244724;
+  display: flex;
+  padding: 16px 0.8px 16px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.iwy-wallet .depth-1-frame-3 {
+  margin: 0 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+}
+.iwy-wallet .request-early-access {
+  overflow-wrap: break-word;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #122112;
+}
+.iwy-wallet .depth-2-frame-0 {
+  border-radius: 24px;
+  background: #1AE51A;
+  display: flex;
+  padding: 12px 0;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.iwy-wallet .depth-1-frame-4 {
+  margin: 0 16px 12px 16px;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+}
+.iwy-wallet .depth-1-frame-5 {
+  background: #122112;
+  width: 390px;
+  height: 20px;
+}
+.iwy-wallet .depth-0-frame-0 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #122112;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.iwy-wallet {
+  background: #FFFFFF;
+  display: flex;
+  box-sizing: border-box;
+}
