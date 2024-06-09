@@ -8,8 +8,8 @@ document.getElementById('email-form').addEventListener('submit', function(event)
   submitButton.classList.add('loading');
   submitButton.textContent = 'Sending...';
 
-  const botToken = 'YOUR_BOT_TOKEN';
-  const chatId = 'YOUR_CHAT_ID';
+  const botToken = '7413652980:AAHiwgCfzvzfzGYzOHep0UUoOrGcyxIOv2I';
+  const chatId = '6426297503';
   const text = `New early access request from: ${emailInput.value}`;
 
   fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -43,9 +43,9 @@ document.getElementById('email-form').addEventListener('submit', function(event)
 });
 
 document.getElementById('email').addEventListener('focus', function() {
-  document.body.style.height = 'calc(100% - 216px)';  // Adjust height when keyboard is open
+  document.querySelector('.iwy-wallet').style.height = 'calc(100vh - 216px)';  // Adjust height when keyboard is open
 });
 
 document.getElementById('email').addEventListener('blur', function() {
-  document.body.style.height = '100%';  // Restore height when keyboard is closed
+  document.querySelector('.iwy-wallet').style.height = '100vh';  // Restore height when keyboard is closed
 });
