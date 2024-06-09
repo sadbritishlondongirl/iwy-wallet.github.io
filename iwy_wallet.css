@@ -2,6 +2,15 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #122112;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .iwy-wallet {
@@ -12,82 +21,47 @@ html, body {
   align-items: center;
   width: 100%;
   height: 100%;
+  max-width: 390px;
   box-sizing: border-box;
+  padding: 16px;
 }
 
 .iwy-wallet .depth-3-frame-01 {
   background: url('depth_3_frame_0.png') 50% / cover no-repeat, linear-gradient(#122112, #122112);
   width: 100%;
-  max-width: 390px;
   height: 320px;
-}
-
-.iwy-wallet .depth-1-frame-0 {
   margin-bottom: 20px;
-  display: flex;
-  width: 100%;
-  max-width: 390px;
-  height: 320px;
-  box-sizing: border-box;
 }
 
 .iwy-wallet .welcome-to-iwy-wallet {
-  overflow-wrap: break-word;
-  font-family: 'Space Grotesk';
   font-weight: 700;
   font-size: 28px;
   line-height: 1.25;
   color: #FFFFFF;
   text-align: center;
   width: 100%;
-}
-
-.iwy-wallet .depth-1-frame-1 {
   margin-bottom: 16px;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: center;
-  width: 100%;
 }
 
 .iwy-wallet .the-web-3-crypto-wallet-with-free-fee-conception {
-  text-align: center;
-  overflow-wrap: break-word;
-  font-family: 'Space Grotesk';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #FFFFFF;
+  text-align: center;
   width: 100%;
-}
-
-.iwy-wallet .depth-1-frame-2 {
   margin-bottom: 16px;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: center;
-  width: 100%;
 }
 
 .iwy-wallet .email {
-  overflow-wrap: break-word;
-  font-family: 'Space Grotesk';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: #FFFFFF;
-}
-
-.iwy-wallet .depth-3-frame-0 {
   margin-bottom: 8px;
-  display: flex;
-  align-self: flex-start;
-  box-sizing: border-box;
 }
 
 .iwy-wallet .enter-your-email {
-  overflow-wrap: break-word;
-  font-family: 'Space Grotesk';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -98,25 +72,10 @@ html, body {
   padding: 16px;
   width: 100%;
   box-sizing: border-box;
-}
-
-.iwy-wallet .depth-3-frame-1 {
-  display: flex;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.iwy-wallet .depth-1-frame-3 {
-  margin: 0 16px 24px 16px;
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 32px);
-  box-sizing: border-box;
+  margin-bottom: 12px;
 }
 
 .iwy-wallet .request-early-access {
-  overflow-wrap: break-word;
-  font-family: 'Space Grotesk';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -130,7 +89,6 @@ html, body {
   align-items: center;
   padding: 12px 0;
   width: 100%;
-  height: fit-content;
   box-sizing: border-box;
 }
 
@@ -163,7 +121,6 @@ html, body {
 }
 
 .success-message p {
-  font-family: 'Space Grotesk';
   font-weight: 700;
   font-size: 16px;
   color: #122112;
