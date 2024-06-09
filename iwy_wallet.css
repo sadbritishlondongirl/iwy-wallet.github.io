@@ -24,6 +24,7 @@ body {
   max-width: 390px;
   box-sizing: border-box;
   padding: 16px;
+  overflow: hidden; /* Prevent scrolling */
 }
 
 .iwy-wallet .depth-3-frame-01 {
