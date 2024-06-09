@@ -1,5 +1,5 @@
 .iwy-wallet .depth-3-frame-01 {
-  background: url('../assets/images/depth_3_frame_0.png') 50% / cover no-repeat, linear-gradient(#122112, #122112);
+  background: url('depth_3_frame_0.png') 50% / cover no-repeat, linear-gradient(#122112, #122112);
   width: 390px;
   height: 320px;
 }
@@ -58,12 +58,15 @@
   font-size: 16px;
   line-height: 1.5;
   color: #94C794;
+  background: #244724;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .iwy-wallet .depth-3-frame-1 {
-  border-radius: 12px;
-  background: #244724;
   display: flex;
-  padding: 16px 0.8px 16px 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -81,11 +84,15 @@
   font-size: 16px;
   line-height: 1.5;
   color: #122112;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .iwy-wallet .depth-2-frame-0 {
   border-radius: 24px;
   background: #1AE51A;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px 0;
   width: 100%;
   height: fit-content;
@@ -115,4 +122,37 @@
   background: #FFFFFF;
   display: flex;
   box-sizing: border-box;
+}
+
+.request-early-access.loading {
+  background-color: #1AE51A;
+  color: #FFFFFF;
+  cursor: not-allowed;
+}
+
+.success-message {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1AE51A;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+}
+
+.success-message img.clover-sticker {
+  width: 50px;
+  height: 50px;
+}
+
+.success-message p {
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  font-size: 16px;
+  color: #122112;
+  margin-top: 10px;
 }
