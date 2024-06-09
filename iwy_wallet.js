@@ -32,20 +32,21 @@ document.getElementById('email-form').addEventListener('submit', function(event)
         successMessage.style.display = 'none';
       }, 5000);
     } else {
-      throw new Error('Failed to send message');
+      alert('There was an error sending your request. Please try again.');
     }
   })
-  .catch((error) => {
-    submitButton.classList.remove('loading');
-    submitButton.textContent = 'Request early access';
-    alert('Error sending email. Please try again.');
+  .catch(error => {
+    alert('There was an error sending your request. Please try again.');
+    console.error('Error:', error);
   });
 });
 
-document.getElementById('email').addEventListener('focus', function() {
-  document.querySelector('.iwy-wallet').style.height = 'calc(100vh - 216px)';  // Adjust height when keyboard is open
-});
+document.addEventListener('touchmove', function(event) {
+  event.preventDefault();
+}, { passive: false });
 
-document.getElementById('email').addEventListener('blur', function() {
-  document.querySelector('.iwy-wallet').style.height = '100vh';  // Restore height when keyboard is closed
+document.addEventListener('focusout', function(event) {
+  if (event.target.tagName === 'INPUT') {
+    window.scrollTo(0, 0);
+  }
 });
